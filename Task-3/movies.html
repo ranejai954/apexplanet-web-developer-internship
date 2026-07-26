@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎬 Movie Search App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        /* ============================================
+           MOVIE APP STYLES
+           ============================================ */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #0f172a;
+            min-height: 100vh;
+            padding: 30px 20px;
+        }
+
+        .container {
+            max-width: 1100px;
+            width: 100%;
+            margin: 0 auto;
+            background: #1e293b;
+            padding: 35px;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+        }
+
+        /* ===== Header ===== */
+        .app-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #334155;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .app-header h1 {
+            font-size: 2rem;
+            color: #facc15;
+        }
+
+        .app-header h1 i {
+            color: #ef4444;
+        }
+
+        .app-header p {
+            color: #94a3b8;
+            width: 100%;
+            font-size: 0.95rem;
+        }
+
+        .back-btn {
+            padding: 10px 24px;
+            background: #334155;
+            color: #e2e8f0;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.95rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .back-btn:hover {
+            background: #475569;
+            transform: translateY(-2px);
+        }
+
+        /* ===== Search Section ===== */
+        .search-box {
+            display: flex;
+            gap: 12px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+
+        .search-box input {
+            flex: 1;
+            padding: 14px 20px;
+            border: 2px solid #334155;
+            border-radius: 12px;
+            font-size: 16px;
+            min-width: 200px;
+            transition: 0.3s;
+            background: #0f172a;
+            color: #e2e8f0;
+        }
+
+        .search-box input:focus {
+            outline: none;
+            border-color: #facc15;
+            box-shadow: 0 0 0 4px rgba(250, 204, 21, 0.1);
+        }
+
+        .search-box input::placeholder {
+            color: #64748b;
+        }
+
+        /* ===== Buttons ===== */
+        .btn {
+            padding: 14px 28px;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            font-size: 15px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            white-space: nowrap;
+        }
+
+        .btn-primary {
+            background: #facc15;
+            color: #0f172a;
+        }
+
+        .btn-primary:hover {
+            background: #eab308;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 20px rgba(250, 204, 21, 0.3);
+        }
+
+        .btn-secondary {
+            background: #334155;
+            color: #e2e8f0;
+        }
+
+        .btn-secondary:hover {
+            background: #475569;
+            transform: translateY(-2px);
+        }
+
+        .btn-danger {
+            background: #ef4444;
+            color: white;
+        }
+
+        .btn-danger:hover {
+            background: #dc2626;
+            transform: translateY(-2px);
+        }
+
+        .btn-small {
+            padding: 8px 16px;
+            font-size: 13px;
+        }
+
+        /* ===== Filters ===== */
+        .filter-section {
+            display: flex;
+            gap: 15px;
+            margin: 15px 0 20px 0;
+            flex-wrap: wrap;
+        }
+
+        .filter-section select {
+            padding: 10px 16px;
+            border: 2px solid #334155;
+            border-radius: 10px;
+            font-size: 14px;
+            background: #0f172a;
+            color: #e2e8f0;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .filter-section select:focus {
+            outline: none;
+            border-color: #facc15;
+        }
+
+        .filter-section label {
+            color: #94a3b8;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        /* ===== Results ===== */
+        .results-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 25px 0 15px 0;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .results-header h3 {
+            color: #e2e8f0;
+            font-size: 1.1rem;
+        }
+
+        .results-header .count {
+            color: #94a3b8;
+            font-size: 0.9rem;
+        }
+
+        .movie-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .movie-card {
+            background: #0f172a;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid #334155;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .movie-card:hover {
+            transform: translateY(-8px);
+            border-color: #facc15;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        .movie-card img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+        }
+
+        .movie-card .movie-info {
+            padding: 15px;
+        }
+
+        .movie-card .movie-info h4 {
+            color: #e2e8f0;
+            font-size: 1rem;
+            margin-bottom: 5px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .movie-card .movie-info .year {
+            color: #94a3b8;
+            font-size: 0.85rem;
+        }
+
+        .movie-card .movie-info .type {
+            color: #64748b;
+            font-size: 0.75rem;
+            text-transform: capitalize;
+            display: inline-block;
+            background: #1e293b;
+            padding: 2px 12px;
+            border-radius: 12px;
+            margin-top: 5px;
+        }
+
+        .movie-card .movie-actions {
+            padding: 10px 15px;
+            border-top: 1px solid #1e293b;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .favorite-btn {
+            background: none;
+            border: none;
+            font-size: 1.3rem;
+            cursor: pointer;
+            color: #475569;
+            transition: 0.3s;
+        }
+
+        .favorite-btn:hover {
+            transform: scale(1.2);
+        }
+
+        .favorite-btn.active {
+            color: #ef4444;
+        }
+
+        /* ===== Loading ===== */
+        .loading {
+            text-align: center;
+            padding: 60px 20px;
+            color: #94a3b8;
+        }
+
+        .loading i {
+            font-size: 3rem;
+            color: #facc15;
+            animation: spin 1s linear infinite;
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        /* ===== No Results ===== */
+        .no-results {
+            text-align: center;
+            padding: 60px 20px;
+            color: #94a3b8;
+        }
+
+        .no-results i {
+            font-size: 3rem;
+            color: #64748b;
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        /* ===== Error ===== */
+        .error {
+            background: #7f1d1d;
+            color: #fca5a5;
+            padding: 16px 20px;
+            border-radius: 12px;
+            margin: 15px 0;
+            display: none;
+            border-left: 4px solid #ef4444;
+            font-weight: 500;
+        }
+
+        /* ===== Modal ===== */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.85);
+            z-index: 9999;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            backdrop-filter: blur(10px);
+        }
+
+        .modal-overlay.active {
+            display: flex;
+        }
+
+        .modal-content {
+            background: #1e293b;
+            border-radius: 16px;
+            max-width: 700px;
+            width: 100%;
+            max-height: 90vh;
+            overflow-y: auto;
+            padding: 35px;
+            position: relative;
+            animation: modalSlideIn 0.3s ease;
+            border: 1px solid #334155;
+        }
+
+        @keyframes modalSlideIn {
+            from {
+                transform: scale(0.9) translateY(-30px);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1) translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            font-size: 28px;
+            cursor: pointer;
+            color: #94a3b8;
+            background: none;
+            border: none;
+            transition: 0.3s;
+        }
+
+        .modal-close:hover {
+            color: #e2e8f0;
+            transform: rotate(90deg);
+        }
+
+        .modal-grid {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            gap: 25px;
+        }
+
+        .modal-grid img {
+            width: 100%;
+            border-radius: 12px;
+            border: 1px solid #334155;
+        }
+
+        .modal-grid h2 {
+            color: #facc15;
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+        }
+
+        .modal-grid .modal-year {
+            color: #94a3b8;
+            font-size: 1rem;
+            margin-bottom: 15px;
+        }
+
+        .modal-grid .modal-detail {
+            color: #e2e8f0;
+            font-size: 0.95rem;
+            margin-bottom: 8px;
+        }
+
+        .modal-grid .modal-detail strong {
+            color: #94a3b8;
+        }
+
+        .modal-grid .modal-plot {
+            color: #cbd5e1;
+            line-height: 1.7;
+            margin: 15px 0;
+            font-size: 0.95rem;
+        }
+
+        .modal-grid .modal-rating {
+            color: #facc15;
+            font-size: 1.2rem;
+        }
+
+        .modal-grid .modal-actions {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+            flex-wrap: wrap;
+        }
+
+        /* ===== Favorites Section ===== */
+        .favorites-section {
+            margin-top: 30px;
+            padding-top: 25px;
+            border-top: 2px solid #334155;
+        }
+
+        .favorites-section h3 {
+            color: #e2e8f0;
+            margin-bottom: 15px;
+        }
+
+        .favorites-section h3 i {
+            color: #ef4444;
+        }
+
+        /* ===== Responsive ===== */
+        @media (max-width: 700px) {
+            .container {
+                padding: 20px;
+            }
+
+            .app-header h1 {
+                font-size: 1.5rem;
+            }
+
+            .search-box {
+                flex-direction: column;
+            }
+
+            .search-box input {
+                width: 100%;
+            }
+
+            .btn {
+                justify-content: center;
+                width: 100%;
+            }
+
+            .filter-section {
+                flex-direction: column;
+            }
+
+            .filter-section select {
+                width: 100%;
+            }
+
+            .movie-grid {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            }
+
+            .movie-card img {
+                height: 200px;
+            }
+
+            .modal-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .modal-grid img {
+                max-width: 200px;
+                margin: 0 auto;
+            }
+
+            .modal-content {
+                padding: 25px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .movie-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 12px;
+            }
+
+            .movie-card img {
+                height: 160px;
+            }
+
+            .movie-card .movie-info h4 {
+                font-size: 0.85rem;
+            }
+
+            .container {
+                padding: 15px;
+            }
+
+            .modal-content {
+                padding: 20px;
+            }
+        }
+
+        /* ===== Scrollbar ===== */
+        .modal-content::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .modal-content::-webkit-scrollbar-track {
+            background: #0f172a;
+            border-radius: 10px;
+        }
+
+        .modal-content::-webkit-scrollbar-thumb {
+            background: #facc15;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- ===== Header ===== -->
+        <div class="app-header">
+            <div>
+                <h1><i class="fas fa-film"></i> Movie Search</h1>
+                <p>Search for movies, series, and episodes</p>
+            </div>
+            <a href="index.html" class="back-btn">
+                <i class="fas fa-arrow-left"></i> Back
+            </a>
+        </div>
+
+        <!-- ===== Search Section ===== -->
+        <div class="search-box">
+            <input type="text" id="movieInput" placeholder="Search for a movie... (e.g., Inception, The Dark Knight)">
+            <button id="searchMovieBtn" class="btn btn-primary">
+                <i class="fas fa-search"></i> Search
+            </button>
+        </div>
+
+        <!-- ===== Filters ===== -->
+        <div class="filter-section">
+            <label>
+                <i class="fas fa-calendar"></i> Year:
+                <select id="yearFilter">
+                    <option value="">Any Year</option>
+                </select>
+            </label>
+            <label>
+                <i class="fas fa-tag"></i> Type:
+                <select id="typeFilter">
+                    <option value="">Any Type</option>
+                    <option value="movie">🎬 Movie</option>
+                    <option value="series">📺 Series</option>
+                    <option value="episode">📼 Episode</option>
+                </select>
+            </label>
+        </div>
+
+        <!-- ===== Error Message ===== -->
+        <div id="errorMessage" class="error"></div>
+
+        <!-- ===== Results ===== -->
+        <div id="movieResults">
+            <div class="loading">
+                <i class="fas fa-film"></i>
+                <p>Search for a movie to get started!</p>
+                <p style="font-size:0.85rem;color:#64748b;margin-top:10px;">
+                    <i class="fas fa-info-circle"></i> Try: Inception, The Dark Knight, Interstellar
+                </p>
+            </div>
+        </div>
+
+        <!-- ===== Favorites ===== -->
+        <div id="favoritesSection" class="favorites-section">
+            <h3><i class="fas fa-heart"></i> Your Favorites</h3>
+            <div id="favoritesGrid" class="movie-grid"></div>
+        </div>
+
+    </div>
+
+    <!-- ===== Movie Details Modal ===== -->
+    <div id="movieModal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <!-- ===== Load Config FIRST ===== -->
+    <script src="js/config.js"></script>
+
+    <!-- ===== Then Load Movie App ===== -->
+    <script src="js/movies.js"></script>
+
+</body>
+</html>
