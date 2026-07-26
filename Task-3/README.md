@@ -96,7 +96,7 @@ Generate motivational quotes and random user profiles.
 
 ### Screenshot
 
-![Quote & User App](screenshots/quote-user-app.png)
+![Quote & User App](screenshots/quotes-user-app.png)
 
 ---
 
