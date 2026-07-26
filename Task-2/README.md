@@ -1,88 +1,154 @@
-# TechNova - Task 2: JavaScript Interactivity
+# 🚀 TechNova - Interactive Portfolio Website (Task 2)
 
-## 📌 Project Overview
-TechNova is a modern, fully responsive business website with advanced JavaScript features. This is **Task 2** of the Web Development Internship, focusing on adding interactivity and dynamic features to the static website built in Task 1.
+Task 2 of the ApexPlanet Full Stack Web Development Internship.
 
-**Live Demo:** [View Project](#)  
-**GitHub Repository:** [Link to your repo]
+This project extends the Task 1 responsive portfolio by adding JavaScript-powered interactive components including Dark Mode, Sticky Navigation, Image Slider, FAQ Accordion, Animated Counters, Smooth Scrolling, Form Validation, Scroll Animations, and more.
 
 ---
 
-## 🚀 Features Implemented
+## 📌 Features
 
-### 1. Loading Screen
-- Professional loading spinner appears on page load
-- Automatically fades out after content loads
-- Creates a polished, professional feel
+### HTML5
+- Semantic HTML
+- Multi-page website
+- Responsive layout
 
-### 2. Scroll Progress Bar
-- Shows reading progress at the top of the page
-- Updates in real-time as you scroll
-- Gradient color for visual appeal
+### CSS3
+- Modern UI
+- Mobile-first design
+- Hover effects
+- Animations
+- Dark Theme Support
 
-### 3. Hamburger Menu
-- Mobile-responsive navigation menu
-- Smooth toggle animation
-- Auto-closes on link click
-
-### 4. Dark Mode 🌙
-- Toggle between light and dark themes
-- Persists user preference using `localStorage`
-- Smooth transition between modes
-- Works on ALL pages
-
-### 5. Back to Top Button
-- Floating button appears after scrolling
-- Smooth scroll to top animation
-- Hover effects for better UX
-
-### 6. Sticky Navbar
-- Navbar sticks to top on scroll
-- Smooth slide-down animation
-- Shadow effect for depth
-
-### 7. Smooth Scroll
-- Smooth scrolling for all anchor links
-- Improves navigation experience
-- Offset for sticky navbar
-
-### 8. Fade Animations
-- Sections fade in as you scroll
-- Smooth 0.6s animation
-- Slight upward movement effect
-
-### 9. Welcome Modal
-- Popup appears 1.5 seconds after page load
-- Shows once per session (sessionStorage)
-- Close with X, overlay click, or Escape key
-
-### 10. Portfolio Slider
-- Image carousel with navigation arrows
-- Dot indicators for slide position
-- Auto-play with pause on hover
-- Keyboard navigation support
-- Touch support for mobile
-
-### 11. FAQ Accordion
-- Expandable Q&A sections
-- Smooth slide animation
-- One open at a time
-- Visual feedback with icons
-
-### 12. Animated Counters
-- Numbers animate from 0 to target
-- Triggers when section is visible
-- Smooth easing animation
-- 2-second duration
-
-### 13. Form Validation
-- Real-time validation on blur
-- Required field checking
-- Email format validation
-- Phone number validation
-- Error messages with styling
-- Success alert on valid submission
+### JavaScript
+- 🌙 Dark / Light Mode Toggle
+- 📌 Sticky Navigation Bar
+- 🔢 Animated Counter
+- 🖼️ Automatic Image Slider
+- ❓ FAQ Accordion
+- 📝 Contact Form Validation
+- 🚀 Scroll Fade Animation
+- ⬆️ Back To Top Button
+- 🎯 Smooth Scrolling
 
 ---
 
-## 📁 Project Structure
+# 📂 Folder Structure
+
+```
+Task-2/
+│
+├── css/
+│     style.css
+│     responsive.css
+│
+├── js/
+│     main.js
+│     slider.js
+│     counter.js
+│     validation.js
+│
+├── images/
+│
+├── screenshots/
+│
+├── index.html
+├── about.html
+├── services.html
+├── portfolio.html
+├── blog.html
+├── contact.html
+└── README.md
+```
+
+---
+
+# 📸 Project Screenshots
+
+## 🏠 Home Page
+
+![Home](screenshots/home-page.png)
+
+---
+
+## 🔢 Animated Counter
+
+![Counter](screenshots/animated-counter.png)
+
+---
+
+## ❓ FAQ Accordion
+
+![FAQ](screenshots/faq-accordion.png)
+
+---
+
+## 🖼️ JavaScript Portfolio Slider
+
+![Slider](screenshots/portfolio-slider.png)
+
+---
+
+## 📱 Mobile Responsive Layout
+
+![Responsive](screenshots/mobile-responsive.png)
+
+---
+
+## 📝 Contact Form Validation
+
+![Contact](screenshots/contact-form.png)
+
+---
+
+## ✅ Successful Form Submission
+
+![Success](screenshots/form-success.png)
+
+---
+
+# 🛠️ Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript (Vanilla JS)
+- Font Awesome
+- Google Fonts
+
+---
+
+# 🎯 Interactive Components
+
+- Sticky Navigation
+- Theme Switcher
+- Image Slider
+- FAQ Accordion
+- Animated Statistics Counter
+- Smooth Scroll
+- Scroll Reveal Animation
+- Contact Form Validation
+- Back To Top Button
+
+---
+
+# 🚀 Live Demo
+
+GitHub Pages:
+
+https://ranejai954.github.io/apexplanet-web-developer-internship/Task-2/
+
+---
+
+# 📂 GitHub Repository
+
+https://github.com/ranejai954/apexplanet-web-developer-internship/tree/main/Task-2
+
+---
+
+# 👨‍💻 Author
+
+Jai Rane
+
+B.Sc Computer Science Student
+
+ApexPlanet Full Stack Web Development Internship
