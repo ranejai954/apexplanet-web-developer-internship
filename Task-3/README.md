@@ -292,7 +292,7 @@ Through this project I learned:
 
 ## 💬 Quote & User
 
-![Quote & User](screenshots/quote-user-app.png)
+![Quote & User](screenshots/quotes-user-app.png)
 
 ---
 
