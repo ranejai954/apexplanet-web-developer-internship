@@ -2,78 +2,101 @@
 
 ## 📌 Project Overview
 
-This project is the third task of the ApexPlanet Full Stack Web Development Internship.
+This project consists of **three API-powered web applications** integrated into a single dashboard called **API Apps Hub**. It demonstrates the use of REST APIs, JavaScript Fetch API, asynchronous programming, DOM manipulation, local storage, and responsive web design.
 
-It combines three interactive JavaScript mini applications that consume real-world REST APIs. The project demonstrates asynchronous programming using Fetch API, async/await, DOM manipulation, local storage, and API integration.
-
-### 🔗 GitHub Repository
-
-https://github.com/ranejai954/apexplanet-web-developer-internship/tree/main/Task-3
+Users can easily navigate between all three applications from a single landing page.
 
 ---
 
-# 🚀 Live Demo
+## 🖼️ Main Hub Preview
 
-> Open the project using **VS Code Live Server** or any local server to run API requests successfully.
+![API Apps Hub](screenshots/main-hub.png)
+
+The hub provides quick access to:
+
+- 🌤️ Weather App
+- 🎬 Movie Search App
+- 💬 Quote & User App
+
+It also showcases the key features and APIs used throughout the project.
+
+---
+
+## 🚀 Live Demo
+
+> Run the project locally using **VS Code Live Server**.
 
 ---
 
 # 📱 Applications Included
 
-## 🌤️ Weather App
+## 🌤️ 1. Weather App
 
-Search weather information for any city worldwide.
+Search real-time weather information for any city around the world.
 
-| Feature | Description |
-|----------|-------------|
-| API | OpenWeatherMap API |
-| Search | Search weather using city name |
-| Geolocation | Current location weather |
-| Unit Toggle | Celsius / Fahrenheit |
-| Forecast | 5-Day Forecast |
-| Recent Searches | Stored using Local Storage |
+### Features
+
+- Current Weather
+- 5-Day Forecast
+- Search by City
+- Current Location (Geolocation)
+- Celsius/Fahrenheit Toggle
+- Recent Searches (localStorage)
+
+### API Used
+
+- OpenWeatherMap API
 
 ### Screenshot
 
-![Weather](screenshots/weather-app.png)
+![Weather App](screenshots/weather-app.png)
 
 ---
 
-## 🎬 Movie Search App
+## 🎬 2. Movie Search App
 
-Search movies, TV shows and episodes.
+Search movies, TV series, and episodes with detailed information.
 
-| Feature | Description |
-|----------|-------------|
-| API | OMDb API |
-| Search | Movie title search |
-| Filters | Year & Type |
-| Favorites | Saved in Local Storage |
-| Modal | Detailed Information |
-| IMDb | Direct IMDb Link |
+### Features
+
+- Search by Title
+- Filter by Year
+- Filter by Type
+- Movie Details Modal
+- IMDb Link
+- Favorites (localStorage)
+
+### API Used
+
+- OMDb API
 
 ### Screenshot
 
-![Movies](screenshots/movie-app.png)
+![Movie Search App](screenshots/movie-app.png)
 
 ---
 
-## 💬 Quote Generator & Random User
+## 💬 3. Quote Generator & Random User
 
-Generate inspirational quotes and random user profiles.
+Generate motivational quotes and random user profiles.
 
-| Feature | Description |
-|----------|-------------|
-| Quote API | Quotable API |
-| User API | RandomUser API |
-| Copy Quote | Clipboard API |
-| Tweet Quote | Twitter Sharing |
-| Save Contacts | Local Storage |
-| vCard Download | Contact Export |
+### Features
+
+- Random Quotes
+- Copy Quote
+- Tweet Quote
+- Random User Generator
+- Save Contacts
+- Download Contact as vCard
+
+### APIs Used
+
+- Quotable API
+- RandomUser API
 
 ### Screenshot
 
-![Quotes](screenshots/quote-app.png)
+![Quote & User App](screenshots/quote-user-app.png)
 
 ---
 
@@ -81,23 +104,24 @@ Generate inspirational quotes and random user profiles.
 
 | Technology | Purpose |
 |------------|---------|
-| HTML5 | Structure |
-| CSS3 | Styling |
-| JavaScript ES6 | Logic |
+| HTML5 | Website Structure |
+| CSS3 | Styling & Responsive Design |
+| JavaScript (ES6+) | Functionality |
 | Fetch API | API Requests |
-| Async / Await | Asynchronous Programming |
+| Async/Await | Asynchronous Programming |
+| Local Storage | Save User Data |
 | Font Awesome | Icons |
 | OpenWeatherMap API | Weather Data |
-| OMDb API | Movie Data |
+| OMDb API | Movie Information |
 | Quotable API | Quotes |
-| RandomUser API | User Profiles |
+| RandomUser API | Random Users |
 
 ---
 
-# 📂 Project Structure
+# 📁 Project Structure
 
 ```
-Task-3/
+T3/
 │
 ├── index.html
 ├── weather.html
@@ -118,6 +142,10 @@ Task-3/
 │   └── learn.js
 │
 ├── screenshots/
+│   ├── main-hub.png
+│   ├── weather-app.png
+│   ├── movie-app.png
+│   └── quote-user-app.png
 │
 ├── .gitignore
 └── README.md
@@ -127,141 +155,118 @@ Task-3/
 
 # 🔐 API Keys Setup
 
-## Required APIs
+## Step 1
 
-| API | Website | Key |
-|-----|----------|-----|
-| OpenWeatherMap | https://openweathermap.org/api | Required |
-| OMDb | https://www.omdbapi.com/apikey.aspx | Required |
-| Quotable | https://api.quotable.io | Not Required |
-| RandomUser | https://randomuser.me | Not Required |
+Get your free API keys.
+
+| API | Key Required |
+|------|--------------|
+| OpenWeatherMap | ✅ |
+| OMDb | ✅ |
+| Quotable | ❌ |
+| RandomUser | ❌ |
 
 ---
 
-## Create `config.js`
+## Step 2
 
 Copy
 
 ```
-config.sample.js
+js/config.sample.js
 ```
 
 to
 
 ```
-config.js
+js/config.js
 ```
 
-Add your keys:
+and add your keys.
 
 ```javascript
 const CONFIG = {
-    WEATHER_API_KEY: "YOUR_OPENWEATHER_API_KEY",
-    MOVIE_API_KEY: "YOUR_OMDB_API_KEY"
+    WEATHER_API_KEY: "YOUR_OPENWEATHER_KEY",
+    MOVIE_API_KEY: "YOUR_OMDB_KEY"
 };
 
 window.CONFIG = CONFIG;
 ```
 
-> **Do not upload `config.js` to GitHub.**
+⚠️ Never upload `config.js` to GitHub.
 
 ---
 
-# ▶️ Running the Project
+# ▶️ How to Run
 
-### Live Server
+### Using Live Server
 
-Right-click
-
-```
-index.html
-```
-
-Choose
-
-```
-Open with Live Server
-```
+1. Open project in VS Code
+2. Install Live Server
+3. Right-click `index.html`
+4. Click **Open with Live Server**
 
 ---
 
-### Python
-
-```bash
-python -m http.server 8000
-```
-
----
-
-### Node
-
-```bash
-npx serve
-```
-
----
-
-# 🧪 Testing
+# 🧪 Testing Guide
 
 ## Weather App
 
-- Search City
-- Use Current Location
-- Switch °C / °F
-- View Forecast
+- Search any city
+- Toggle °C / °F
+- Use current location
+- View 5-day forecast
 
 ---
 
-## Movie App
+## Movie Search
 
-- Search Movies
-- Filter Results
-- Open Details
-- Add Favorites
-
----
-
-## Quote Generator
-
-- Generate Quote
-- Copy Quote
-- Tweet Quote
+- Search movie title
+- Filter by year
+- Filter by type
+- Add favorites
+- View movie details
 
 ---
 
-## Random User
+## Quote & User
 
-- Generate User
-- Save Contact
+- Generate quote
+- Copy quote
+- Tweet quote
+- Generate user
+- Save contact
 - Download vCard
 
 ---
 
-# 📊 Features Completed
+# 📊 Feature Status
 
 | Module | Status |
-|----------|--------|
-| Weather API | ✅ |
-| Movie API | ✅ |
-| Quote API | ✅ |
-| Random User API | ✅ |
-| Async JavaScript | ✅ |
-| Local Storage | ✅ |
+|---------|--------|
+| Weather App | ✅ |
+| Movie Search | ✅ |
+| Quote Generator | ✅ |
+| Random User | ✅ |
 | Responsive Design | ✅ |
+| Local Storage | ✅ |
 
 ---
 
-# 📚 Learning Outcomes
+# 🎯 Learning Outcomes
 
-- Fetch API
-- Async / Await
-- Promise Handling
-- JSON Parsing
-- DOM Manipulation
-- Error Handling
-- Local Storage
-- API Security
+Through this project I learned:
+
 - REST APIs
+- Fetch API
+- Async/Await
+- JSON Parsing
+- Error Handling
+- DOM Manipulation
+- Responsive UI Design
+- Local Storage
+- API Integration
+- JavaScript ES6+
 
 ---
 
@@ -275,40 +280,42 @@ npx serve
 
 ## 🌤️ Weather App
 
-![Weather](screenshots/weather-app.png)
+![Weather App](screenshots/weather-app.png)
 
 ---
 
-## 🎬 Movie App
+## 🎬 Movie Search
 
-![Movies](screenshots/movie-app.png)
-
----
-
-## 💬 Quote Generator
-
-![Quotes](screenshots/quote-app.png)
+![Movie Search](screenshots/movie-app.png)
 
 ---
 
-# 🏆 Internship Progress
+## 💬 Quote & User
+
+![Quote & User](screenshots/quote-user-app.png)
+
+---
+
+# 🏆 Task Progress
 
 | Task | Status |
 |------|--------|
-| Task 1 | ✅ Completed |
-| Task 2 | ✅ Completed |
-| **Task 3** | ✅ Completed |
-| Task 4 | ⏳ Upcoming |
-| Task 5 | ⏳ Upcoming |
+| Task 1 – HTML & CSS | ✅ Complete |
+| Task 2 – JavaScript | ✅ Complete |
+| **Task 3 – API Integration** | ✅ Complete |
+| Task 4 – Backend | ⏳ Upcoming |
+| Task 5 – Full Stack | ⏳ Upcoming |
 
 ---
 
-# 🚀 Next Steps
+# 🚀 Future Improvements
 
-- Record Demo Video
-- Publish GitHub Repository
-- Share LinkedIn Post
-- Continue with Task 4
+- Dark / Light Mode
+- Search History
+- Better Animations
+- More API Integrations
+- PWA Support
+- Deployment
 
 ---
 
@@ -316,45 +323,34 @@ npx serve
 
 **Jai Rane**
 
-B.Sc. Computer Science Student
+Web Development Intern
 
-ApexPlanet Full Stack Web Development Intern
-
-### GitHub
-
-https://github.com/ranejai954
-
-### LinkedIn
-
-https://www.linkedin.com/in/jai-rane-62ba58352/
+- **GitHub:** https://github.com/ranejai954
+- **LinkedIn:** https://www.linkedin.com/in/jai-rane-62ba58352/
 
 ---
 
 # 🙏 Acknowledgements
 
-- OpenWeatherMap
+Special thanks to:
+
+- OpenWeatherMap API
 - OMDb API
 - Quotable API
 - RandomUser API
 - Font Awesome
+- Google Fonts
+
+for providing free resources and APIs used in this project.
 
 ---
 
 # 📄 License
 
-This project is created for educational and internship purposes.
+This project was created for educational and internship purposes.
 
 ---
 
-# ❤️ Built During
+## ⭐ If you found this project helpful, consider giving it a star!
 
-**ApexPlanet Full Stack Web Development Internship**
-
----
-
-# 🔗 Quick Links
-
-- Home → `index.html`
-- Weather → `weather.html`
-- Movies → `movies.html`
-- Quotes → `quotes.html`
+**Built with ❤️ during my Web Development Internship.**
