@@ -4,7 +4,7 @@
 A fully functional Expense Tracker application built with vanilla JavaScript. This app allows users to manage their income and expenses with full CRUD (Create, Read, Update, Delete) operations, data persistence using localStorage, and advanced JavaScript features like debouncing, throttling, and keyboard navigation.
 
 **Live Demo:** [View Project](#)  
-**GitHub Repository:** [Link to your repo]
+**GitHub Repository:** https://github.com/ranejai954/apexplanet-web-developer-internship/tree/main/Task-4
 
 ---
 
