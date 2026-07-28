@@ -66,9 +66,12 @@ A fully functional Expense Tracker application built with vanilla JavaScript. Th
 Task-4/
 │
 ├── index.html
+├── README.md
+│
 ├── css/
 │   └── style.css
+│
 ├── js/
 │   └── app.js
-├── screenshots
-└── README.md
+│
+└── screenshots/                
