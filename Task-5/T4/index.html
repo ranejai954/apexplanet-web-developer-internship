@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💰 Expense Tracker</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- ===== HEADER ===== -->
+    <div class="header">
+        <h1><i class="fas fa-wallet"></i> Expense Tracker</h1>
+        <p>Track your income and expenses with ease</p>
+    </div>
+
+    <!-- ===== STATS ===== -->
+    <div class="stats">
+        <div class="stat-card">
+            <h3>💰 Total Income</h3>
+            <div class="amount income" id="totalIncome">₹0.00</div>
+        </div>
+        <div class="stat-card">
+            <h3>💸 Total Expenses</h3>
+            <div class="amount expense" id="totalExpense">₹0.00</div>
+        </div>
+        <div class="stat-card">
+            <h3>📊 Balance</h3>
+            <div class="amount balance" id="balance">₹0.00</div>
+        </div>
+    </div>
+
+    <!-- ===== CHART SECTION ===== -->
+    <div class="chart-section">
+        <h3><i class="fas fa-chart-pie"></i> Spending Breakdown</h3>
+        <div class="chart-container">
+            <canvas id="categoryChart"></canvas>
+        </div>
+        <p id="chartEmpty" class="chart-empty">No expenses yet. Add some to see the chart!</p>
+    </div>
+
+    <!-- ===== ADD TRANSACTION FORM ===== -->
+    <div class="form-section">
+        <h3><i class="fas fa-plus-circle"></i> Add Transaction</h3>
+        <div class="form-row">
+            <input type="text" id="description" placeholder="Description..." aria-label="Transaction description">
+            <input type="number" id="amount" placeholder="Amount" aria-label="Transaction amount">
+            <select id="category" aria-label="Transaction category">
+                <option value="Food">🍔 Food</option>
+                <option value="Transport">🚗 Transport</option>
+                <option value="Shopping">🛍️ Shopping</option>
+                <option value="Bills">📄 Bills</option>
+                <option value="Entertainment">🎮 Entertainment</option>
+                <option value="Salary">💼 Salary</option>
+                <option value="Other">📌 Other</option>
+            </select>
+            <select id="type" aria-label="Transaction type">
+                <option value="income">💰 Income</option>
+                <option value="expense">💸 Expense</option>
+            </select>
+            <button class="btn btn-primary" id="addBtn"><i class="fas fa-plus"></i> Add</button>
+        </div>
+    </div>
+
+    <!-- ===== FILTERS ===== -->
+    <div class="filters">
+        <input type="text" id="searchInput" placeholder="🔍 Search transactions..." aria-label="Search transactions">
+        <select id="categoryFilter" aria-label="Filter by category">
+            <option value="">All Categories</option>
+            <option value="Food">🍔 Food</option>
+            <option value="Transport">🚗 Transport</option>
+            <option value="Shopping">🛍️ Shopping</option>
+            <option value="Bills">📄 Bills</option>
+            <option value="Entertainment">🎮 Entertainment</option>
+            <option value="Salary">💼 Salary</option>
+            <option value="Other">📌 Other</option>
+        </select>
+        <select id="typeFilter" aria-label="Filter by type">
+            <option value="">All Types</option>
+            <option value="income">💰 Income</option>
+            <option value="expense">💸 Expense</option>
+        </select>
+    </div>
+
+    <!-- ===== TRANSACTION LIST ===== -->
+    <div class="list-header">
+        <h3><i class="fas fa-list"></i> Transactions</h3>
+        <span id="transactionCount">0 transactions</span>
+    </div>
+    <div class="expense-list" id="expenseList">
+        <div class="empty-state">
+            <i class="fas fa-inbox"></i>
+            <p>No transactions yet. Add your first one above!</p>
+        </div>
+    </div>
+
+</div>
+
+<script src="js/app.js"></script>
+
+</body>
+</html>
