@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Apps Hub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        /* ===== GLOBAL STYLES ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #0f172a;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        /* ===== HEADER ===== */
+        .main-header {
+            text-align: center;
+            padding: 40px 0 30px 0;
+            border-bottom: 2px solid #334155;
+            margin-bottom: 40px;
+        }
+
+        .main-header h1 {
+            font-size: 2.8rem;
+            color: #facc15;
+            font-weight: 700;
+        }
+
+        .main-header h1 i {
+            color: #facc15;
+            margin-right: 10px;
+        }
+
+        .main-header p {
+            color: #94a3b8;
+            font-size: 1.1rem;
+            margin-top: 10px;
+        }
+
+        /* ===== APP CARDS ===== */
+        .apps-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .app-card {
+            background: #1e293b;
+            border-radius: 16px;
+            padding: 35px 25px;
+            text-align: center;
+            border: 1px solid #334155;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .app-card:hover {
+            transform: translateY(-10px);
+            border-color: #facc15;
+            box-shadow: 0 10px 40px rgba(250, 204, 21, 0.1);
+        }
+
+        .app-card .icon {
+            font-size: 3.5rem;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .app-card .icon-weather { color: #38bdf8; }
+        .app-card .icon-movie { color: #ef4444; }
+        .app-card .icon-quote { color: #facc15; }
+
+        .app-card h2 {
+            color: #e2e8f0;
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+        }
+
+        .app-card p {
+            color: #94a3b8;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .app-card .badge {
+            display: inline-block;
+            background: #334155;
+            color: #94a3b8;
+            font-size: 0.75rem;
+            padding: 4px 14px;
+            border-radius: 20px;
+            margin-top: 15px;
+        }
+
+        .app-card .btn {
+            display: inline-block;
+            margin-top: 18px;
+            padding: 10px 30px;
+            background: #facc15;
+            color: #0f172a;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            cursor: pointer;
+            transition: 0.3s;
+            text-decoration: none;
+        }
+
+        .app-card .btn:hover {
+            background: #eab308;
+            transform: scale(1.05);
+        }
+
+        /* ===== FEATURES SECTION ===== */
+        .features-section {
+            margin-top: 60px;
+            padding-top: 40px;
+            border-top: 2px solid #334155;
+        }
+
+        .features-section h2 {
+            color: #e2e8f0;
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 30px;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .feature-item {
+            text-align: center;
+            padding: 20px;
+            background: #1e293b;
+            border-radius: 12px;
+            border: 1px solid #334155;
+        }
+
+        .feature-item i {
+            font-size: 2rem;
+            color: #facc15;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .feature-item h4 {
+            color: #e2e8f0;
+            font-size: 1rem;
+        }
+
+        .feature-item p {
+            color: #94a3b8;
+            font-size: 0.85rem;
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 900px) {
+            .apps-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .apps-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .main-header h1 {
+                font-size: 2rem;
+            }
+
+            .features-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 400px) {
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- ===== HEADER ===== -->
+        <header class="main-header">
+            <h1><i class="fas fa-cubes"></i> API Apps Hub</h1>
+            <p>3 powerful mini-apps built with real-world APIs</p>
+        </header>
+
+        <!-- ===== APP CARDS ===== -->
+        <div class="apps-grid">
+
+            <!-- Weather App -->
+            <a href="weather.html" class="app-card">
+                <span class="icon icon-weather">
+                    <i class="fas fa-cloud-sun"></i>
+                </span>
+                <h2>🌤️ Weather App</h2>
+                <p>Check current weather and 5-day forecast for any city worldwide.</p>
+                <span class="badge">OpenWeatherMap API</span>
+                <span class="btn">Launch App →</span>
+            </a>
+
+            <!-- Movie App -->
+            <a href="movies.html" class="app-card">
+                <span class="icon icon-movie">
+                    <i class="fas fa-film"></i>
+                </span>
+                <h2>🎬 Movie Search</h2>
+                <p>Search for movies, series, and episodes. Save your favorites!</p>
+                <span class="badge">OMDb API</span>
+                <span class="btn">Launch App →</span>
+            </a>
+
+            <!-- Quote + User App -->
+            <a href="quotes.html" class="app-card">
+                <span class="icon icon-quote">
+                    <i class="fas fa-quote-right"></i>
+                </span>
+                <h2>💬 Quote & User</h2>
+                <p>Get random quotes, generate user profiles, and save contacts.</p>
+                <span class="badge">Quotable + RandomUser API</span>
+                <span class="btn">Launch App →</span>
+            </a>
+
+        </div>
+
+        <!-- ===== FEATURES SECTION ===== -->
+        <section class="features-section">
+            <h2>✨ Key Features</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <i class="fas fa-cloud-sun"></i>
+                    <h4>Weather</h4>
+                    <p>Search by city, geolocation, °C/°F toggle</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-heart"></i>
+                    <h4>Favorites</h4>
+                    <p>Save movies & contacts with localStorage</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-quote-left"></i>
+                    <h4>Quotes</h4>
+                    <p>Random quotes, copy & tweet functionality</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-user"></i>
+                    <h4>Users</h4>
+                    <p>Generate users, save contacts, download vCard</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== FOOTER ===== -->
+        <footer style="text-align:center;padding:40px 0 20px 0;color:#64748b;font-size:0.9rem;border-top:1px solid #334155;margin-top:40px;">
+            <p>
+                Built with ❤️ using 
+                <strong style="color:#facc15;">OpenWeatherMap</strong>, 
+                <strong style="color:#facc15;">OMDb</strong>, 
+                <strong style="color:#facc15;">Quotable</strong> & 
+                <strong style="color:#facc15;">RandomUser</strong> APIs
+            </p>
+            <p style="margin-top:8px;font-size:0.8rem;">
+                Task 3: API Integration & Dynamic Content
+            </p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
