@@ -1,133 +1,265 @@
-# 🌐 TechNova - Complete Web Development Project
+# 🚀 Task 5 – Testing, Deployment & Professional Presentation
 
-## 📌 Overview
-TechNova is a complete web development project built during a 5-task internship at **ApexPlanet Software Pvt.Ltd**.
+## 📌 Objective
 
-**Live Demo:** [Your Vercel/Cloudflare URL]  
-**GitHub:** [Your GitHub URL]
+Task 5 is the final stage of the **ApexPlanet Web Development Internship**, focused on polishing, testing, documenting, and preparing all previous tasks for professional presentation and deployment.
+
+This task ensures the project is production-ready through comprehensive testing, organized documentation, GitHub best practices, and deployment.
+
+| Resource | Link |
+|----------|------|
+| 🌐 Live Demo | *(Coming Soon)* |
+| 📂 Main Repository | https://github.com/ranejai954/apexplanet-web-developer-internship |
+| 🎥 Demo Video | *(Coming Soon)* |
+| 💼 LinkedIn Post | *(Coming Soon)* |
 
 ---
 
-## 📸 Screenshots
+# 🎯 Activities Completed
 
-### 1. Main Hub Page
+## 🧪 Testing
+
+The project was thoroughly tested to ensure a smooth user experience.
+
+### Cross-Browser Testing
+
+- ✅ Google Chrome
+- ✅ Microsoft Edge
+- ✅ Mozilla Firefox
+- ✅ Safari
+
+### Responsive Testing
+
+Verified across:
+
+- 💻 Desktop
+- 📱 Mobile
+- 📲 Tablet
+
+### Functional Testing
+
+- Forms validated correctly
+- Navigation tested
+- CRUD operations verified
+- API responses handled correctly
+- localStorage persistence verified
+- Error handling tested
+
+### Code Cleanup
+
+- Removed unnecessary `console.log()` statements
+- Removed debugging code
+- Organized project structure
+- Improved code readability
+
+---
+
+# 📝 Documentation
+
+Created professional documentation including:
+
+- Complete repository README
+- Individual README files for each task
+- Screenshots for every project
+- Organized folder structure
+- Installation instructions
+
+---
+
+# 🚀 Deployment
+
+Project prepared for deployment using **Vercel**.
+
+Deployment includes:
+
+- GitHub integration
+- Automatic deployments
+- Responsive production build
+- Optimized assets
+
+> **Live Demo:** *(Coming Soon)*
+
+---
+
+# 🎥 Project Demonstration
+
+The final walkthrough includes:
+
+- Project Introduction
+- Task 1 Overview
+- Task 2 Features
+- Task 3 API Demonstrations
+- Task 4 Expense Tracker Demo
+- Responsive Design Showcase
+- Final Conclusion
+
+> **Demo Video:** *(Coming Soon)*
+
+---
+
+# 🛠️ Technologies & Tools
+
+| Category | Tools |
+|----------|-------|
+| Frontend | HTML5, CSS3, JavaScript (ES6+) |
+| APIs | OpenWeatherMap, OMDb, Quotable, RandomUser |
+| Libraries | Chart.js, Font Awesome |
+| Storage | localStorage |
+| Version Control | Git & GitHub |
+| Deployment | Vercel |
+| Testing | Chrome DevTools, Lighthouse |
+| Documentation | Markdown |
+
+---
+
+# 📁 Folder Structure
+
+```text
+Task-5/
+│
+├── index.html
+├── README.md
+├── .gitignore
+├── .env.example
+│
+├── T1/
+├── T2/
+├── T3/
+├── T4/
+│
+└── screenshots/
+    ├── 1-main-hub.png
+    ├── 2-task1-home.png
+    ├── 3-task1-home-alt.png
+    ├── 4-task3-hub.png
+    ├── 5-task3-weather.png
+    ├── 6-task3-movies.png
+    ├── 7-task3-quotes.png
+    └── 8-task4-expense.png
+```
+
+---
+
+# 📸 Screenshots
+
+## 🏠 Main Hub
+
 ![Main Hub](screenshots/1-main-hub.png)
-*Complete project hub with links to all 5 tasks*
-
-### 2. Task 1 - HTML & CSS Website
-![Task 1](screenshots/2-task1-home.png)
-*Responsive business website with hero section*
-
-### 3. Task 2 - JavaScript Features
-![Task 2](screenshots/3-task2-darkmode.png)
-*Dark mode and interactive features*
-
-### 4. Task 3 - Weather App
-![Weather App](screenshots/4-task3-weather.png)
-*Real-time weather with 5-day forecast*
-
-### 5. Task 3 - Movie Search
-![Movie App](screenshots/5-task3-movies.png)
-*Search movies and save favorites*
-
-### 6. Task 3 - Quote Generator
-![Quote App](screenshots/6-task3-quotes.png)
-*Random quotes with copy & tweet functionality*
-
-### 7. Task 4 - Expense Tracker
-![Expense Tracker](screenshots/7-task4-expense.png)
-*Full CRUD app with Chart.js analytics*
-
-### 8. Mobile View
-![Mobile View](screenshots/8-mobile-view.png)
-*Fully responsive on all devices*
 
 ---
 
-## 🚀 Features by Task
+## 🌦️ Weather App
 
-### 📄 Task 1: HTML & CSS
-- ✅ Responsive Business Website
-- ✅ Hero Section with CTA
-- ✅ Services, About, Testimonials
-- ✅ Contact Form
-- ✅ Footer
-
-### ⚡ Task 2: JavaScript Interactivity
-- ✅ Dark Mode with localStorage
-- ✅ Hamburger Menu
-- ✅ Loading Screen
-- ✅ Scroll Progress Bar
-- ✅ Back to Top Button
-- ✅ Sticky Navbar
-- ✅ Smooth Scroll
-- ✅ Fade Animations
-- ✅ Modal Popup
-- ✅ Portfolio Slider
-- ✅ FAQ Accordion
-- ✅ Animated Counters
-- ✅ Form Validation
-
-### 🌐 Task 3: API Integration
-- ✅ Weather App (OpenWeatherMap API)
-- ✅ Movie Search (OMDb API)
-- ✅ Quote Generator (Quotable API)
-- ✅ Random User (RandomUser API)
-- ✅ Favorites with localStorage
-
-### 💰 Task 4: CRUD + Advanced Features
-- ✅ Expense Tracker (Full CRUD)
-- ✅ Real-time Stats (Income/Expense/Balance)
-- ✅ Chart.js Doughnut Chart
-- ✅ Debouncing (Search)
-- ✅ Throttling (Scroll)
-- ✅ Infinite Scrolling
-- ✅ Keyboard Navigation
-- ✅ localStorage Persistence
-
-### 🚀 Task 5: Testing & Deployment
-- ✅ Cross-browser Testing
-- ✅ Cross-device Testing
-- ✅ Professional README
-- ✅ Vercel/Cloudflare Deployment
-- ✅ Demo Video
-- ✅ Portfolio Presentation
+![Weather App](screenshots/5-task3-weather.png)
 
 ---
 
-## 🛠️ Technologies Used
+## 🎬 Movie Search
 
-| Technology | Purpose |
-|------------|---------|
-| HTML5 | Structure |
-| CSS3 | Styling |
-| JavaScript (ES6+) | Interactivity |
-| Chart.js | Data Visualization |
-| OpenWeatherMap API | Weather Data |
-| OMDb API | Movie Data |
-| Quotable API | Quotes |
-| RandomUser API | User Profiles |
-| localStorage | Data Persistence |
-| Font Awesome | Icons |
-| Vercel/Cloudflare | Hosting |
+![Movie Search](screenshots/6-task3-movies.png)
 
 ---
 
-## 💻 How to Run
+## 💰 Expense Tracker
 
-### Option 1: Live Server
-1. Install "Live Server" extension in VS Code
-2. Right-click `index.html` → "Open with Live Server"
+![Expense Tracker](screenshots/8-task4-expense.png)
 
-### Option 2: Open Directly
-1. Open `index.html` in your browser
-
-### Option 3: Live Demo
-[Your Vercel/Cloudflare URL]
+> Additional screenshots are available inside the `screenshots/` folder.
 
 ---
 
-## 🔐 API Keys Setup
+# 📊 Project Summary
 
-1. Copy `.env.example` to `.env`
-2. Add your API keys:
+| Metric | Value |
+|---------|------:|
+| Internship Tasks | 5 |
+| Responsive Projects | 5 |
+| REST APIs Used | 4 |
+| JavaScript Features | 15+ |
+| CRUD Applications | 1 |
+| Charts Implemented | 1 |
+| Screenshots | 8+ |
+
+---
+
+# 🚀 Running the Project
+
+## Clone the repository
+
+```bash
+git clone https://github.com/ranejai954/apexplanet-web-developer-internship.git
+```
+
+## Open Task 5
+
+```bash
+cd apexplanet-web-developer-internship/Task-5
+```
+
+Open `index.html` using your browser or the **Live Server** extension in Visual Studio Code.
+
+---
+
+# 📈 Skills Demonstrated
+
+- Responsive Web Design
+- Modern JavaScript (ES6+)
+- DOM Manipulation
+- REST API Integration
+- Async/Await
+- CRUD Operations
+- localStorage
+- Performance Optimization
+- Chart.js Integration
+- Git & GitHub
+- Documentation
+- Deployment Preparation
+
+---
+
+# 👨‍💻 Author
+
+## Jai Rane
+
+**GitHub**
+
+https://github.com/ranejai954
+
+**LinkedIn**
+
+*(Add your LinkedIn Profile)*
+
+**Portfolio**
+
+*(Add your Portfolio Link)*
+
+---
+
+# 🙏 Acknowledgements
+
+Special thanks to:
+
+- ApexPlanet Software Pvt. Ltd.
+- OpenWeatherMap API
+- OMDb API
+- Quotable API
+- RandomUser API
+- Chart.js
+- Font Awesome
+- Vercel
+
+---
+
+# 📄 License
+
+This project was created as part of the **ApexPlanet Web Development Internship** for educational purposes.
+
+---
+
+<div align="center">
+
+### ⭐ Thank you for visiting!
+
+If you found this project helpful, consider giving the repository a **Star ⭐**.
+
+</div>
