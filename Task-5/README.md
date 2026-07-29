@@ -1,31 +1,46 @@
 # 🌐 TechNova - Complete Web Development Project
 
 ## 📌 Overview
+TechNova is a complete web development project built during a 5-task internship at **ApexPlanet Software Pvt.Ltd**.
 
-TechNova is a complete web development project built during a 5-task internship at **ApexPlanet Software Pvt.Ltd**. It showcases a progression from static HTML/CSS to a fully interactive web application with API integration, CRUD operations, and professional deployment.
-
-| **Live Demo** | [https://technova.netlify.app](https://technova.netlify.app) |
-| **GitHub** | [Link to your repo] |
-| **Demo Video** | [Link to your video] |
+**Live Demo:** [Your Vercel/Cloudflare URL]  
+**GitHub:** [Your GitHub URL]
 
 ---
 
 ## 📸 Screenshots
 
-### Main Hub
-![Main Hub](screenshots/desktop.png)
+### 1. Main Hub Page
+![Main Hub](screenshots/1-main-hub.png)
+*Complete project hub with links to all 5 tasks*
 
-### Mobile View
-![Mobile View](screenshots/mobile.png)
+### 2. Task 1 - HTML & CSS Website
+![Task 1](screenshots/2-task1-home.png)
+*Responsive business website with hero section*
 
-### Weather App
-![Weather App](screenshots/weather-app.png)
+### 3. Task 2 - JavaScript Features
+![Task 2](screenshots/3-task2-darkmode.png)
+*Dark mode and interactive features*
 
-### Movie Search
-![Movie Search](screenshots/movie-app.png)
+### 4. Task 3 - Weather App
+![Weather App](screenshots/4-task3-weather.png)
+*Real-time weather with 5-day forecast*
 
-### Expense Tracker
-![Expense Tracker](screenshots/expense-tracker.png)
+### 5. Task 3 - Movie Search
+![Movie App](screenshots/5-task3-movies.png)
+*Search movies and save favorites*
+
+### 6. Task 3 - Quote Generator
+![Quote App](screenshots/6-task3-quotes.png)
+*Random quotes with copy & tweet functionality*
+
+### 7. Task 4 - Expense Tracker
+![Expense Tracker](screenshots/7-task4-expense.png)
+*Full CRUD app with Chart.js analytics*
+
+### 8. Mobile View
+![Mobile View](screenshots/8-mobile-view.png)
+*Fully responsive on all devices*
 
 ---
 
@@ -74,7 +89,7 @@ TechNova is a complete web development project built during a 5-task internship 
 - ✅ Cross-browser Testing
 - ✅ Cross-device Testing
 - ✅ Professional README
-- ✅ Netlify Deployment
+- ✅ Vercel/Cloudflare Deployment
 - ✅ Demo Video
 - ✅ Portfolio Presentation
 
@@ -94,8 +109,25 @@ TechNova is a complete web development project built during a 5-task internship 
 | RandomUser API | User Profiles |
 | localStorage | Data Persistence |
 | Font Awesome | Icons |
-| Netlify | Hosting |
+| Vercel/Cloudflare | Hosting |
 
 ---
 
-## 📁 Project Structure
+## 💻 How to Run
+
+### Option 1: Live Server
+1. Install "Live Server" extension in VS Code
+2. Right-click `index.html` → "Open with Live Server"
+
+### Option 2: Open Directly
+1. Open `index.html` in your browser
+
+### Option 3: Live Demo
+[Your Vercel/Cloudflare URL]
+
+---
+
+## 🔐 API Keys Setup
+
+1. Copy `.env.example` to `.env`
+2. Add your API keys:
