@@ -1,0 +1,135 @@
+/* ===============================
+   Large Tablets (992px)
+================================= */
+
+@media (max-width:992px){
+
+.hero-content,
+.about-content,
+.contact-grid{
+    grid-template-columns:1fr;
+    display:grid;
+    gap:40px;
+}
+
+.feature-grid,
+.portfolio-grid,
+.blog-grid,
+.testimonial-grid,
+.stats-grid,
+.footer-content{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.hero-text{
+    text-align:center;
+}
+
+.hero-buttons{
+    justify-content:center;
+}
+
+.hero-text p{
+    margin:auto auto 30px;
+}
+
+}
+/* ===============================
+   Mobile Devices (768px)
+================================= */
+
+@media (max-width:768px){
+
+.navbar{
+    flex-direction:column;
+    height:auto;
+    padding:20px 0;
+}
+
+.nav-links{
+    flex-direction:column;
+    gap:15px;
+    margin:20px 0;
+    text-align:center;
+}
+
+.hero-content,
+.about-content,
+.contact-grid{
+    display:grid;
+    grid-template-columns:1fr;
+}
+
+.feature-grid,
+.portfolio-grid,
+.blog-grid,
+.testimonial-grid,
+.stats-grid,
+.footer-content{
+    grid-template-columns:1fr;
+}
+
+.hero{
+    padding:70px 0;
+}
+
+.hero-text h1{
+    font-size:2.2rem;
+}
+
+.page-banner h1{
+    font-size:2.2rem;
+}
+
+.section-title h2{
+    font-size:2rem;
+}
+
+.hero-buttons{
+    flex-direction:column;
+}
+
+.btn{
+    width:100%;
+    text-align:center;
+}
+
+.contact-item{
+    font-size:1rem;
+}
+
+.footer-content{
+    text-align:center;
+}
+
+}
+/* ===============================
+   Small Phones (576px)
+================================= */
+
+@media (max-width:576px){
+
+.container{
+    width:95%;
+}
+
+.hero-text h1{
+    font-size:1.8rem;
+}
+
+.page-banner{
+    padding:70px 0;
+}
+
+section{
+    padding:60px 0;
+}
+
+.feature-card,
+.blog-card,
+.portfolio-card,
+.testimonial-card{
+    padding:20px;
+}
+
+}
