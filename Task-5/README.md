@@ -1,114 +1,231 @@
-# 🚀 Task 5 – Testing, Deployment & Professional Presentation
+# 🚀 Task 5: Testing, Deployment & Professional Presentation
 
 ## 📌 Objective
 
-Task 5 is the final stage of the **ApexPlanet Web Development Internship**, focused on polishing, testing, documenting, and preparing all previous tasks for professional presentation and deployment.
-
-This task ensures the project is production-ready through comprehensive testing, organized documentation, GitHub best practices, and deployment.
+**Task 5** is the final capstone of the **ApexPlanet Full Stack Web Developer Internship**. This task focuses on testing, deployment, documentation, and presenting the complete internship project in a professional manner.
 
 | Resource | Link |
 |----------|------|
-| 🌐 Live Demo | *(Coming Soon)* |
-| 📂 Main Repository | https://github.com/ranejai954/apexplanet-web-developer-internship |
-| 🎥 Demo Video | *(Coming Soon)* |
-| 💼 LinkedIn Post | *(Coming Soon)* |
+| 🌐 Live Demo | **Add Your Deployment URL** |
+| 💻 Main Repository | https://github.com/ranejai954/apexplanet-web-developer-internship |
+| 🎥 Demo Video | **Add Your YouTube Video Link** |
+| 💼 LinkedIn Post | **Add Your LinkedIn Post Link** |
 
 ---
 
-# 🎯 Activities Completed
+# 🎯 Task Overview
 
-## 🧪 Testing
+Task 5 concludes the internship by combining everything built throughout the previous tasks into one complete project.
 
-The project was thoroughly tested to ensure a smooth user experience.
+The main objectives include:
 
-### Cross-Browser Testing
-
-- ✅ Google Chrome
-- ✅ Microsoft Edge
-- ✅ Mozilla Firefox
-- ✅ Safari
-
-### Responsive Testing
-
-Verified across:
-
-- 💻 Desktop
-- 📱 Mobile
-- 📲 Tablet
-
-### Functional Testing
-
-- Forms validated correctly
-- Navigation tested
-- CRUD operations verified
-- API responses handled correctly
-- localStorage persistence verified
-- Error handling tested
-
-### Code Cleanup
-
-- Removed unnecessary `console.log()` statements
-- Removed debugging code
-- Organized project structure
-- Improved code readability
+- ✅ Cross-browser testing
+- ✅ Mobile responsiveness testing
+- ✅ Bug fixing and optimization
+- ✅ Professional documentation
+- ✅ GitHub repository organization
+- ✅ Live deployment
+- ✅ Portfolio-ready presentation
 
 ---
 
-# 📝 Documentation
+# 🧪 Testing Performed
 
-Created professional documentation including:
+### 🌐 Cross Browser Testing
 
-- Complete repository README
-- Individual README files for each task
-- Screenshots for every project
-- Organized folder structure
-- Installation instructions
+Successfully tested on:
+
+- Google Chrome
+- Microsoft Edge
+- Mozilla Firefox
+- Safari
+
+---
+
+### 📱 Responsive Testing
+
+Verified layouts on:
+
+- Desktop
+- Laptop
+- Tablet
+- Mobile
+
+---
+
+### ✅ Functional Testing
+
+Verified the following features:
+
+- Navigation
+- Contact Forms
+- Dark Mode
+- API Requests
+- Search Filters
+- CRUD Operations
+- Local Storage
+- Responsive Navigation
+- Buttons & Modals
+
+---
+
+### 🧹 Code Quality
+
+Completed the following improvements:
+
+- Removed unused code
+- Removed debugging statements
+- Improved folder structure
+- Optimized JavaScript
+- Cleaned CSS
+- Organized assets
 
 ---
 
 # 🚀 Deployment
 
-Project prepared for deployment using **Vercel**.
+The project has been prepared for deployment using **Vercel**.
 
 Deployment includes:
 
-- GitHub integration
-- Automatic deployments
-- Responsive production build
-- Optimized assets
-
-> **Live Demo:** *(Coming Soon)*
+- Automatic GitHub deployment
+- Production build
+- Responsive testing
+- Final optimization
 
 ---
 
-# 🎥 Project Demonstration
+# 🎬 Project Demonstration
 
-The final walkthrough includes:
+A complete walkthrough video includes:
 
 - Project Introduction
-- Task 1 Overview
-- Task 2 Features
-- Task 3 API Demonstrations
-- Task 4 Expense Tracker Demo
-- Responsive Design Showcase
-- Final Conclusion
-
-> **Demo Video:** *(Coming Soon)*
+- Task 1 Website
+- Task 2 JavaScript Features
+- Task 3 API Applications
+- Task 4 Expense Tracker
+- Mobile Responsive View
+- Testing Results
+- Final Deployment
 
 ---
 
-# 🛠️ Technologies & Tools
+# 📸 Project Screenshots
 
-| Category | Tools |
-|----------|-------|
+## 🏠 Main Hub
+
+![Main Hub](screenshots/main-home-screen.png)
+
+Complete dashboard containing all internship tasks.
+
+---
+
+## 📄 Task 1 — HTML & CSS Website
+
+### Light Theme
+
+![TechNova Light](screenshots/technova-v1.png)
+
+Responsive business landing page.
+
+### Dark Theme
+
+![TechNova Dark](screenshots/technova-v2.png)
+
+Dark mode implementation with JavaScript.
+
+---
+
+## 🌐 Task 3 — API Apps Hub
+
+![API Hub](screenshots/main-hub.png)
+
+Central hub containing all API-powered applications.
+
+---
+
+## 🌤 Weather Application
+
+![Weather App](screenshots/weather-app.png)
+
+Features:
+
+- Current Weather
+- 5-Day Forecast
+- Search by City
+- Geolocation Support
+- Celsius/Fahrenheit Toggle
+
+Powered by **OpenWeatherMap API**.
+
+---
+
+## 🎬 Movie Search Application
+
+![Movie Search](screenshots/movie-app.png)
+
+Features:
+
+- Movie Search
+- Year Filter
+- Type Filter
+- Favorites
+- Local Storage
+
+Powered by **OMDb API**.
+
+---
+
+## 💬 Quote & User Generator
+
+![Quote Generator](screenshots/quotes-user-app.png)
+
+Features:
+
+- Random Quotes
+- Copy Quote
+- Tweet Quote
+- Random User Generator
+- Save Contacts
+- Download vCard
+
+Powered by:
+
+- Quotable API
+- RandomUser API
+
+---
+
+## 💰 Expense Tracker
+
+![Expense Tracker](screenshots/with-transactions.png)
+
+Features:
+
+- Add Transaction
+- Edit Transaction
+- Delete Transaction
+- Income & Expense Tracking
+- Balance Calculation
+- Search Transactions
+- Filters
+- Local Storage
+- Chart.js Analytics
+
+---
+
+# 🛠 Technologies Used
+
+| Category | Technologies |
+|-----------|--------------|
 | Frontend | HTML5, CSS3, JavaScript (ES6+) |
 | APIs | OpenWeatherMap, OMDb, Quotable, RandomUser |
-| Libraries | Chart.js, Font Awesome |
-| Storage | localStorage |
-| Version Control | Git & GitHub |
-| Deployment | Vercel |
+| Charts | Chart.js |
+| Icons | Font Awesome |
+| Storage | localStorage, sessionStorage |
 | Testing | Chrome DevTools, Lighthouse |
-| Documentation | Markdown |
+| Deployment | Vercel |
+| Version Control | Git & GitHub |
 
 ---
 
@@ -123,115 +240,103 @@ Task-5/
 ├── .env.example
 │
 ├── T1/
+│
 ├── T2/
+│
 ├── T3/
+│
 ├── T4/
 │
 └── screenshots/
-    ├── 1-main-hub.png
-    ├── 2-task1-home.png
-    ├── 3-task1-home-alt.png
-    ├── 4-task3-hub.png
-    ├── 5-task3-weather.png
-    ├── 6-task3-movies.png
-    ├── 7-task3-quotes.png
-    └── 8-task4-expense.png
+    ├── main-home-screen.png
+    ├── technova-v1.png
+    ├── technova-v2.png
+    ├── main-hub.png
+    ├── weather-app.png
+    ├── movie-app.png
+    ├── quotes-user-app.png
+    └── with-transactions.png
 ```
-
----
-
-# 📸 Screenshots
-
-## 🏠 Main Hub
-
-![Main Hub](screenshots/1-main-hub.png)
-
----
-
-## 🌦️ Weather App
-
-![Weather App](screenshots/5-task3-weather.png)
-
----
-
-## 🎬 Movie Search
-
-![Movie Search](screenshots/6-task3-movies.png)
-
----
-
-## 💰 Expense Tracker
-
-![Expense Tracker](screenshots/8-task4-expense.png)
-
-> Additional screenshots are available inside the `screenshots/` folder.
-
----
-
-# 📊 Project Summary
-
-| Metric | Value |
-|---------|------:|
-| Internship Tasks | 5 |
-| Responsive Projects | 5 |
-| REST APIs Used | 4 |
-| JavaScript Features | 15+ |
-| CRUD Applications | 1 |
-| Charts Implemented | 1 |
-| Screenshots | 8+ |
 
 ---
 
 # 🚀 Running the Project
 
-## Clone the repository
+## Clone Repository
 
 ```bash
 git clone https://github.com/ranejai954/apexplanet-web-developer-internship.git
 ```
 
-## Open Task 5
+Move inside Task-5
 
 ```bash
 cd apexplanet-web-developer-internship/Task-5
 ```
 
-Open `index.html` using your browser or the **Live Server** extension in Visual Studio Code.
+Run using **Live Server** in Visual Studio Code.
 
 ---
 
-# 📈 Skills Demonstrated
+# 🔑 API Keys Required
 
-- Responsive Web Design
-- Modern JavaScript (ES6+)
-- DOM Manipulation
-- REST API Integration
-- Async/Await
-- CRUD Operations
-- localStorage
-- Performance Optimization
-- Chart.js Integration
-- Git & GitHub
-- Documentation
-- Deployment Preparation
+| API | Website | Purpose |
+|------|----------|----------|
+| OpenWeatherMap | https://openweathermap.org/api | Weather Application |
+| OMDb | https://www.omdbapi.com/apikey.aspx | Movie Search |
+
+Create a `.env` file from `.env.example` and add your API keys before running the applications.
+
+---
+
+# 📊 Project Summary
+
+| Feature | Status |
+|----------|--------|
+| HTML & CSS Website | ✅ |
+| JavaScript Features | ✅ |
+| API Integration | ✅ |
+| Expense Tracker CRUD | ✅ |
+| Testing | ✅ |
+| Deployment | ✅ |
+| Documentation | ✅ |
+
+---
+
+# 🏆 Internship Tasks
+
+| Task | Description | Status |
+|------|-------------|:------:|
+| Task 1 | Responsive HTML & CSS Website | ✅ |
+| Task 2 | JavaScript Interactivity | ✅ |
+| Task 3 | API Integration | ✅ |
+| Task 4 | Expense Tracker (CRUD) | ✅ |
+| Task 5 | Testing, Deployment & Documentation | ✅ |
+
+---
+
+# 🎥 Demo Video
+
+Replace the placeholder below with your YouTube video ID.
+
+```md
+[![Demo Video](https://img.youtube.com/vi/YOUR_VIDEO_ID/0.jpg)](https://youtu.be/YOUR_VIDEO_ID)
+```
 
 ---
 
 # 👨‍💻 Author
 
-## Jai Rane
+**Jai Rane**
 
-**GitHub**
+Full Stack Web Developer Intern
 
-https://github.com/ranejai954
+ApexPlanet Software Pvt. Ltd.
 
-**LinkedIn**
+### Connect with Me
 
-*(Add your LinkedIn Profile)*
-
-**Portfolio**
-
-*(Add your Portfolio Link)*
+- GitHub: https://github.com/ranejai954
+- LinkedIn: **Add Your LinkedIn URL**
 
 ---
 
@@ -247,19 +352,20 @@ Special thanks to:
 - Chart.js
 - Font Awesome
 - Vercel
+- Visual Studio Code
 
 ---
 
 # 📄 License
 
-This project was created as part of the **ApexPlanet Web Development Internship** for educational purposes.
+This repository was developed as part of the **ApexPlanet Full Stack Web Developer Internship** and is intended for educational and portfolio purposes.
 
 ---
 
 <div align="center">
 
-### ⭐ Thank you for visiting!
+### ⭐ If you found this project helpful, please consider giving it a Star!
 
-If you found this project helpful, consider giving the repository a **Star ⭐**.
+Built with ❤️ during the **ApexPlanet Full Stack Web Developer Internship**
 
 </div>
