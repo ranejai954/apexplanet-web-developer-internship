@@ -1,21 +1,31 @@
 # 🚀 ApexPlanet Web Developer Internship
 
-[![GitHub last commit](https://img.shields.io/github/last-commit/ranejai954/apexplanet-web-developer-internship)](https://github.com/ranejai954/apexplanet-web-developer-internship/commits/main)
-[![GitHub repo size](https://img.shields.io/github/repo-size/ranejai954/apexplanet-web-developer-internship)](https://github.com/ranejai954/apexplanet-web-developer-internship)
-[![GitHub stars](https://img.shields.io/github/stars/ranejai954/apexplanet-web-developer-internship)](https://github.com/ranejai954/apexplanet-web-developer-internship/stargazers)
+![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel)
 
-# 📌 Overview
+---
 
-This repository contains all the projects completed during the **ApexPlanet Web Development Internship**. Each task focuses on progressively building practical web development skills using **HTML5, CSS3, JavaScript, REST APIs, localStorage, and modern frontend development techniques**.
+## 📌 Overview
 
-The internship follows a task-based learning approach, where every project introduces new concepts and builds upon the previous one.
+This repository contains all the projects completed during my **ApexPlanet Web Development Internship**.
+
+Throughout the internship, I completed **five progressive tasks**, beginning with responsive web design and advancing to JavaScript interactivity, REST API integration, CRUD application development, performance optimization, testing, documentation, and deployment.
+
+Each task builds upon the previous one to demonstrate practical frontend development skills using modern web technologies.
+
+---
+
+## 🔗 Project Links
 
 | Resource | Link |
 |----------|------|
 | 📂 Repository | https://github.com/ranejai954/apexplanet-web-developer-internship |
-| 🌐 Live Demo | *https://apexplanet-web-developer-internship.vercel.app/* |
-| 🎥 Demo Video | *(Coming Soon)* |
-| 💼 LinkedIn Post | *https://www.linkedin.com/posts/jai-rane-62ba58352_webdevelopment-testing-deployment-ugcPost-7488186538288295936-TWgY/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFgTpoMBIWErdgjvXsARVcjxD3QxlNEUxKU* |
+| 🌐 Live Demo | https://apexplanet-web-developer-internship.vercel.app |
+| 💼 LinkedIn Post | https://www.linkedin.com/posts/jai-rane-62ba58352_webdevelopment-testing-deployment-ugcPost-7488186538288295936-TWgY/ |
+| 🎥 Demo Video | Coming Soon |
 
 ---
 
@@ -30,6 +40,8 @@ apexplanet-web-developer-internship/
 ├── Task-4/
 ├── Task-5/
 │
+├── screenshots/
+│
 └── README.md
 ```
 
@@ -40,23 +52,23 @@ apexplanet-web-developer-internship/
 ## 🌐 Task 1 – Responsive Website
 
 ### Objective
-
-Build a fully responsive website using HTML and CSS.
+Build a fully responsive business website using HTML and CSS.
 
 ### Technologies
-
 - HTML5
 - CSS3
 - Flexbox
 - CSS Grid
 
 ### Features
-
 - Responsive Layout
-- Modern Landing Page
-- Multiple Sections
+- Hero Section
+- About Section
+- Services
+- Portfolio
+- Blog
 - Contact Form
-- Mobile-Friendly Design
+- Mobile Friendly Design
 
 **Status:** ✅ Completed
 
@@ -65,25 +77,18 @@ Build a fully responsive website using HTML and CSS.
 ## ⚡ Task 2 – JavaScript Interactivity
 
 ### Objective
-
-Enhance the website with interactive JavaScript features.
-
-### Technologies
-
-- JavaScript (ES6+)
-- DOM Manipulation
+Enhance the website using JavaScript.
 
 ### Features
-
-- 🌙 Dark Mode
-- 🍔 Hamburger Navigation
-- 📊 Scroll Progress Bar
-- ⬆️ Back-to-Top Button
-- 📌 Sticky Navbar
-- 🎠 Portfolio Slider
-- ❓ FAQ Accordion
-- 🔢 Animated Counters
-- ✅ Form Validation
+- Dark Mode
+- Hamburger Navigation
+- Sticky Navbar
+- Scroll Progress Bar
+- Back to Top Button
+- Portfolio Slider
+- FAQ Accordion
+- Animated Counters
+- Contact Form Validation
 
 **Status:** ✅ Completed
 
@@ -92,87 +97,70 @@ Enhance the website with interactive JavaScript features.
 ## 🌐 Task 3 – API Integration
 
 ### Objective
-
-Build mini applications using real-world REST APIs.
-
-### Technologies
-
-- Fetch API
-- Async/Await
-- REST APIs
+Develop mini web applications using real-world REST APIs.
 
 ### Applications
 
-#### 🌦️ Weather App
-
+#### 🌤️ Weather App
 - Current Weather
 - 5-Day Forecast
 - Geolocation Support
 
-#### 🎬 Movie Search App
-
+#### 🎬 Movie Search
 - Search Movies
-- Favorites
-- localStorage
+- Filter Results
+- Save Favorites
 
 #### 💬 Quote & User Generator
-
 - Random Quotes
-- Random Users
-- Copy & Share
-- Save Contacts
+- Copy Quote
+- Tweet Quote
+- Random User Profiles
+- Save Contact (vCard)
 
 **Status:** ✅ Completed
 
 ---
 
-## 💰 Task 4 – Expense Tracker (CRUD)
+## 💰 Task 4 – Expense Tracker
 
 ### Objective
-
-Develop a complete CRUD application with persistent storage and data visualization.
-
-### Technologies
-
-- HTML5
-- CSS3
-- JavaScript (ES6+)
-- Chart.js
-- localStorage
+Develop a complete CRUD application with data visualization.
 
 ### Features
 
-- ➕ Add Transactions
-- ✏️ Edit Transactions
-- 🗑️ Delete Transactions
-- 📋 View Transactions
-- 📊 Income & Expense Analytics
-- 🥧 Doughnut Chart
-- 🔍 Search
-- 🗂️ Filters
-- ⌨️ Keyboard Shortcuts
-- ⚡ Debouncing
-- 📜 Throttling
-- ♾️ Infinite Scrolling
+- Add Transactions
+- Edit Transactions
+- Delete Transactions
+- Income & Expense Tracking
+- Doughnut Chart
+- Search
+- Filters
+- Debouncing
+- Throttling
+- Infinite Scrolling
+- Keyboard Shortcuts
+- Local Storage
 
 **Status:** ✅ Completed
 
 ---
 
-## 🚀 Task 5 – Final Project & Deployment
+## 🚀 Task 5 – Final Testing & Deployment
 
 ### Objective
 
-Finalize, optimize, document, and deploy the internship projects.
+Finalize, optimize, document, and deploy the complete internship project.
 
 ### Activities
 
-- Cross-Browser Testing
-- Responsive Testing
+- Cross Browser Testing
+- Mobile Responsive Testing
 - Performance Optimization
-- GitHub Documentation
-- Deployment
-- Final Presentation
+- Documentation
+- GitHub Repository Cleanup
+- Deployment on Vercel
+- Portfolio Presentation
 
 **Status:** ✅ Completed
 
@@ -181,7 +169,7 @@ Finalize, optimize, document, and deploy the internship projects.
 # 🛠️ Tech Stack
 
 | Category | Technologies |
-|-----------|--------------|
+|----------|--------------|
 | Frontend | HTML5, CSS3, JavaScript (ES6+) |
 | APIs | OpenWeatherMap, OMDb, Quotable, RandomUser |
 | Libraries | Chart.js, Font Awesome |
@@ -193,15 +181,99 @@ Finalize, optimize, document, and deploy the internship projects.
 
 # 📸 Project Screenshots
 
-| Task | Preview |
-|------|---------|
-| Task 1 | *(Add Screenshot)* |
-| Task 2 | *(Add Screenshot)* |
-| Task 3 | *(Add Screenshot)* |
-| Task 4 | *(Add Screenshot)* |
-| Task 5 | *(Add Screenshot)* |
+## 🏠 Main Hub
 
-> Additional screenshots are available inside each task's `screenshots` folder.
+![Main Hub](screenshots-all-final/main-home-screen.png)
+
+---
+
+## 📄 Task 1
+
+### Homepage
+
+![Homepage](screenshots-all-final/technova-v1.png)
+
+### Features
+
+![Features](screenshots-all-final/technova-v2.png)
+
+---
+
+## ⚡ Task 2
+
+### Animated Counter
+
+![Counter](screenshots-all-final/animated-counter.png)
+
+### FAQ Accordion
+
+![FAQ](screenshots-all-final/faq-accordion.png)
+
+### Portfolio Slider
+
+![Portfolio](screenshots-all-final/portfolio-slider.png)
+
+### Contact Form
+
+![Contact](screenshots-all-final/contact-form.png)
+
+### Form Success
+
+![Success](screenshots-all-final/form-success.png)
+
+---
+
+## 🌐 Task 3
+
+### API Hub
+
+![API Hub](screenshots-all-final/main-hub.png)
+
+### Weather App
+
+![Weather](screenshots-all-final/weather-app.png)
+
+### Movie Search
+
+![Movie](screenshots-all-final/movie-app.png)
+
+### Quote Generator
+
+![Quote](screenshots-all-final/quotes-user-app.png)
+
+---
+
+## 💰 Task 4
+
+### Dashboard
+
+![Dashboard](screenshots-all-final/dashboard.png)
+
+### Transactions
+
+![Transactions](screenshots-all-final/with-transactions.png)
+
+### Empty State
+
+![Empty](screenshots-all-final/empty-state.png)
+
+### Food Category
+
+![Food](screenshots-all-final/food.png)
+
+### Transport Category
+
+![Transport](screenshots-all-final/transport.png)
+
+### Entertainment Category
+
+![Entertainment](screenshots-all-final/entertainment.png)
+
+---
+
+## 📱 Mobile Responsive
+
+![Mobile](screenshots-all-final/mobile-responsive.png)
 
 ---
 
@@ -219,56 +291,54 @@ Finalize, optimize, document, and deploy the internship projects.
 
 # 🚀 Getting Started
 
-## Clone the repository
+## Clone the Repository
 
 ```bash
 git clone https://github.com/ranejai954/apexplanet-web-developer-internship.git
 ```
 
-## Navigate to any task
+Navigate to any task.
+
+Example:
 
 ```bash
 cd apexplanet-web-developer-internship/Task-4
 ```
 
-## Run the project
-
-Open the `index.html` file in your preferred browser or use **Live Server** in Visual Studio Code.
+Open the project using **Live Server** in Visual Studio Code or simply open the `index.html` file in your browser.
 
 ---
 
 # 🎯 Skills Gained
 
 - Responsive Web Design
-- Modern JavaScript (ES6+)
+- HTML5 & CSS3
+- JavaScript (ES6+)
 - DOM Manipulation
+- REST APIs
 - Fetch API
 - Async/Await
 - CRUD Operations
 - localStorage
-- Performance Optimization
 - Chart.js
+- Debouncing
+- Throttling
+- Infinite Scrolling
 - Git & GitHub
-- Deployment
+- Deployment with Vercel
 - Technical Documentation
 
 ---
 
 # 👨‍💻 Author
 
-## Jai Rane
+**Jai Rane**
 
-**GitHub**
+Full Stack Web Developer Intern
 
-https://github.com/ranejai954
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github)](https://github.com/ranejai954)
 
-**LinkedIn**
-
-*(Add your LinkedIn profile)*
-
-**Portfolio**
-
-*(Add your portfolio website)*
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/jai-rane-62ba58352/)
 
 ---
 
@@ -283,6 +353,7 @@ Special thanks to:
 - RandomUser API
 - Chart.js
 - Font Awesome
+- Vercel
 
 ---
 
@@ -294,8 +365,8 @@ This repository was created for educational and internship purposes.
 
 <div align="center">
 
-### ⭐ If you found this repository useful, consider giving it a star!
+### ⭐ If you found this repository helpful, consider giving it a Star!
 
-Thank you for visiting! 🚀
+Thank you for visiting. Happy Coding! 🚀
 
 </div>
