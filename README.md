@@ -13,7 +13,7 @@ The internship follows a task-based learning approach, where every project intro
 | Resource | Link |
 |----------|------|
 | 📂 Repository | https://github.com/ranejai954/apexplanet-web-developer-internship |
-| 🌐 Live Demo | *(Coming Soon)* |
+| 🌐 Live Demo | *https://apexplanet-web-developer-internship.vercel.app/* |
 | 🎥 Demo Video | *(Coming Soon)* |
 | 💼 LinkedIn Post | *(Coming Soon)* |
 
